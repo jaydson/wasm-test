@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Wasm example</title>
+</head>
+<body>
+	<div>
+		Counter from C code: <span id="wasm_counter">
+	</div>
+	<div>
+		Fibonacci from C code: <span id="wasm_fibo">0</span><br>
+		<input type="text" id="fibo_value">
+		<button onclick="document.querySelector('#wasm_fibo').innerHTML = wasmFibo(document.querySelector('#fibo_value').value)">Fibo</button>
+	</div>
+<script src="dist/bundle.js"></script>
+<script>
+	window.onload = function() {
+		document.querySelector('#wasm_counter').innerHTML = wasmCounter()
+	}
+</script>
+</body>
+</html>

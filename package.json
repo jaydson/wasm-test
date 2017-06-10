@@ -1,0 +1,19 @@
+{
+  "name": "wasm-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "wasm-loader": "^1.0.0",
+    "webpack": "^2.6.1"
+  },
+  "devDependencies": {
+    "wasm-loader": "^1.0.0"
+  },
+  "scripts": {
+    "build": "webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
